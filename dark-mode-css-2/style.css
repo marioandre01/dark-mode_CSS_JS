@@ -1,0 +1,98 @@
+/*
+    Copyright (c) 2020 - present, DITDOT Ltd.
+    https://www.ditdot.hr/en
+*/
+
+/* default, light mode styles set with variables */
+:root {
+    --color-background: #f9f9f9;
+    --color-default: #000;
+    --color-accent-1: deepskyblue;
+    --color-accent-2: violet;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    max-height: 100%;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Toggle button */
+  .btn {
+    position: absolute;
+    padding: 10px 16px;
+    background-color: var(--color-background);
+    border: var(--color-default) solid 3px;
+    color: var(--color-default);
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* SVG lightsabers */
+  .lightsaber {
+    width: 200px;
+    position: absolute;
+  }
+  
+  .lightsaber.second {
+    transform: rotate(90deg);
+  }
+  
+  .first-blade {
+    fill: var(--color-accent-1);
+  }
+  
+  .second-blade {
+    fill: var(--color-accent-2);
+  }
+  
+  .handle {
+    fill: var(--color-default);
+  }
+  
+  /*dark-mode styles*/
+  .dark-mode {
+    --color-background: #000;
+    --color-default: #f9f9f9;
+    --color-accent-1: cyan;
+    --color-accent-2: magenta;
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #000;
+        --color-default: #f9f9f9;
+        --color-accent-1: cyan;
+        --color-accent-2: magenta;
+    }
+  } */
+  
+  .dark-mode .lightsaber path {
+    transition: fill .12s ease-in;
+  }
+  
+  p.caption {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 30px;
+  }
+  
+  p.caption a {
+    color: var(--color-default);
+  }
