@@ -53,6 +53,9 @@ $ git clone https://github.com/marioandre01/dark-mode_CSS_JS.git
 
 # entre na pasta do projeto
 $ cd dark-mode_CSS_JS
+
+# entre em uma das pastas disponíveis
+$ cd nome_da_pasta_escolhida
 ```
 ### 💻 Executando a aplicação
 
